@@ -13,6 +13,7 @@ namespace CodeFirst
         [Required]
         [MaxLength(2000)]
         public string Description { get; set; }
+        [Required]
         public CourseLevel Level { get; set; }
         public float FullPrice { get; set; }
         [ForeignKey("Author")]
