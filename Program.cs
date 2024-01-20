@@ -8,7 +8,7 @@ namespace CodeFirst
     {
         public int Id { get; set; }
         [Required]
-        [MaxLength(255)]
+        [MaxLength(300)]
         public string Name { get; set; }
         [Required]
         [MaxLength(2000)]
@@ -54,6 +54,11 @@ namespace CodeFirst
         {
                 
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 
         class Program
