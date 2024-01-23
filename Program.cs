@@ -11,7 +11,7 @@ namespace CodeFirst
         [MaxLength(300)]
         public string Name { get; set; }
         [Required]
-        [MaxLength(2000)]
+        [MaxLength(1500)]
         public string Description { get; set; }
         [Required]
         public CourseLevel Level { get; set; }
