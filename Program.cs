@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Globalization;
 
 namespace CodeFirst
 {
@@ -66,8 +67,18 @@ namespace CodeFirst
         {
             static void Main(string[] args)
             {
+            string luckyNumber = "16";
 
-            }
+            int parsedLuckyNumber = int.Parse(luckyNumber);
+
+            CultureInfo culture = new CultureInfo("de-DE");
+            double temperature = double.Parse("30.7", culture);
+
+            Console.WriteLine($"{parsedLuckyNumber} and temperature {temperature}");
+
+            Console.ReadLine();
+
+        }
         }
     
 }
