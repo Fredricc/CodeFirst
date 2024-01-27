@@ -72,7 +72,7 @@ namespace CodeFirst
             int parsedLuckyNumber = int.Parse(luckyNumber);
 
             CultureInfo culture = new CultureInfo("de-DE");
-            double temperature = double.Parse("30.7", culture);
+            double temperature = double.Parse("39.7", culture);
 
             Console.WriteLine($"{parsedLuckyNumber} and temperature {temperature}");
 
