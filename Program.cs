@@ -75,6 +75,7 @@ namespace CodeFirst
             double temperature = double.Parse("366.7", culture);
 
             Console.WriteLine($"{parsedLuckyNumber} and temperature {temperature}");
+            Console.WriteLine($" temperature {temperature}");
 
             Console.ReadLine();
 
