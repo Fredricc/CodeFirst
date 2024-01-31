@@ -76,6 +76,7 @@ namespace CodeFirst
 
             Console.WriteLine($"{parsedLuckyNumber} and temperature {temperature}");
             Console.WriteLine($" temperature {temperature}");
+            Console.WriteLine($" temperature {temperature}");
 
             Console.ReadLine();
 
